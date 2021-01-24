@@ -45,26 +45,90 @@ body {
   letter-spacing: var(--primery-letter-spacing);
   line-height: 1.39;
   color: var(--black-color);
+  display: block;
 }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+   margin: 0;
+ }
 
 /* логотип */
 .logo-item-blue {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   color: var(--accent-color);
   }
 
 .logo-item-studio {
   color: var(--black-color);
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   }
 
-/* навігаці сайту */
+  .logo-link {
+    margin-right: 93px;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+  }
+
+/*==================== Навігація==================== */
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--accent-color);
+}
+.navigation-list-item:not(:last-child),
+.contacts-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list li {
+  margin-right: 50px;
 }
 
 .navigation-link {
@@ -90,10 +154,20 @@ body {
   letter-spacing: 0.02em;
 }
 
+
 .navigation-link-adress:hover,
 .navigation-link-adress:focus {
   color: var(--accent-color);
 }
+
+.navigation-contact {
+display: flex;
+align-items: center;
+margin-left: auto;
+
+}
+
+
 
 .navigation-link-adress {
   font-weight: var(--medium-font-weight);
@@ -103,7 +177,9 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* button */
+
+
+/* ============Портфоліо Секція button============ */
 .button-title:hover,
 .button-title:focus {
   background-color: var(--accent-color);
@@ -116,14 +192,16 @@ body {
   font-size: 14px;
   line-height: 1.62;
 }
+/* ======Портфоліо закінчення секції button====== */
 
+/* < !-- Портфоліо Секція зі зразками роботи в картинках --> */
 .my-work-title {
   color: var(--secondary-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-
+/* < !--  Студія Чим займаються та 3 картинки --> */
 .about-title {
   color: var(--secondary-text-color);
   font-weight: var(--bold-font-weight);
@@ -133,7 +211,7 @@ body {
   text-align: center;
 
 }
-
+/* <!-- Портфоліо Секція зі зразками роботи в картинках --> */
 .my-work-text {
   color: var(--primary-text-color);
   font-weight: var(--regular-font-weight);
