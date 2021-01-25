@@ -54,29 +54,29 @@
     </header>
     <!-- Унікальний текст -->
     <main>
-      <!-- Секція button -->
+      <!-- Секція загальна -->
       <section class="my-work">
-        <h1 class="visually-hidden">Нашы роботы</h1>
-        <ul class="list-button list">
-          <li>
-            <button class="button-title" type="button">Все</button>
-          </li>
-          <li>
-            <button class="button-title" type="button">Веб-сайты</button>
-          </li>
-          <li>
-            <button class="button-title" type="button">Приложения</button>
-          </li>
-          <li>
-            <button class="button-title" type="button">Дизайн</button>
-          </li>
-          <li>
-            <button class="button-title" type="button">Маркетинг</button>
-          </li>
-        </ul>
-
-        <!-- Секція зі зразками роботи в картинках -->
-        <ul class="my-work-list list">
+        <div class="container">
+          <h1 class="visually-hidden">Нашы роботы</h1>
+          <ul class="list-button list">
+            <li class="button-item">
+              <button class="button-title" type="button">Все</button>
+            </li>
+            <li class="button-item">
+              <button class="button-title" type="button">Веб-сайты</button>
+            </li>
+            <li class="button-item">
+              <button class="button-title" type="button">Приложения</button>
+            </li>
+            <li class="button-item">
+              <button class="button-title" type="button">Дизайн</button>
+            </li>
+            <li class="button-item">
+              <button class="button-title" type="button">Маркетинг</button>
+            </li>
+          </ul>
+      <!-- Секція зі зразками роботи в картинках 9 штук -->
+          <ul class="my-work-list list">
           <li class="my-work-item">
             <a class="my-work-link link" href="#">
               <img
@@ -85,8 +85,9 @@
                 width="370"
                 height="294"
               />
+              <div class="description-my-work">
               <h2 class="my-work-title">Технокряк</h2>
-              <p class="my-work-text">Веб-сайт</p>
+              <p class="my-work-text">Веб-сайт</p></div>
             </a>
           </li>
           <li class="my-work-item">
@@ -97,10 +98,11 @@
                 width="370"
                 height="294"
               />
+              <div class="description-my-work">
               <h2 class="my-work-title">
                 Постер <span lang="en">New Orlean vs Golden Star</span>
               </h2>
-              <p class="my-work-text">Дизайн</p>
+              <p class="my-work-text">Дизайн</p></div>
             </a>
           </li>
           <li class="my-work-item">
@@ -111,10 +113,11 @@
                 width="370"
                 height="294"
               />
+            <div class="description-my-work">
               <h2 class="my-work-title">
                 Ресторан <span lang="en">Seafood</span>
               </h2>
-              <p class="my-work-text">Приложение</p>
+              <p class="my-work-text">Приложение</p></div>
             </a>
           </li>
           <li class="my-work-item">
@@ -125,15 +128,17 @@
                 width="370"
                 height="294"
               />
+              <div class="description-my-work">
               <h2 class="my-work-title">Проект <span lang="en">Prime</span></h2>
-              <p class="my-work-text">Маркетинг</p>
+              <p class="my-work-text">Маркетинг</p></div>
             </a>
           </li>
           <li class="my-work-item">
             <a class="my-work-link link" href="#">
               <img src="./img/box.jpg" alt="коробки" width="370" height="294" />
+              <div class="description-my-work">
               <h2 class="my-work-title">Проект <span lang="en">Boxes</span></h2>
-              <p class="my-work-text">Приложение</p>
+              <p class="my-work-text">Приложение</p></div>
             </a>
           </li>
           <li class="my-work-item">
@@ -144,10 +149,11 @@
                 width="370"
                 height="294"
               />
+              <div class="description-my-work"></div>
               <h2 class="my-work-title" lang="en">
                 Inspiration has no Borders
               </h2>
-              <p class="my-work-text">Веб-сайт</p>
+              <p class="my-work-text">Веб-сайт</p></a>
             </a>
           </li>
           <li class="my-work-item">
@@ -158,10 +164,11 @@
                 width="370"
                 height="294"
               />
+              <div class="description-my-work"></div>
               <h2 class="my-work-title">
                 Издание <span lang="en">Limited Edition</span>
               </h2>
-              <p class="my-work-text">Дизайн</p>
+              <p class="my-work-text">Дизайн</p></a>
             </a>
           </li>
           <li class="my-work-item">
@@ -172,8 +179,9 @@
                 width="370"
                 height="294"
               />
+              <div class="description-my-work">
               <h2 class="my-work-title">Проект <span lang="en">LAB</span></h2>
-              <p class="my-work-text">Маркетинг</p>
+              <p class="my-work-text">Маркетинг</p></div>
             </a>
           </li>
           <li class="my-work-item">
@@ -184,39 +192,44 @@
                 width="370"
                 height="294"
               />
+              <div class="description-my-work">
               <h2 class="my-work-title" lang="en">Growing Business</h2>
-              <p class="my-work-text">Приложение</p>
+              <p class="my-work-text">Приложение</p></div>
             </a>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!-- Нижня частина сайту -->
     <footer class="footer">
-      <a class="logo-link" href="#">
-        <span class="logo-item-blue">Web</span
-        ><span class="logo-item-studio">Studio</span>
-      </a>
-      <address class="address">
-        <a
-          class="map-link"
-          href="https://goo.gl/maps/7WQNY8XXJnGFuJA47"
-          target="_blank"
-          >г. Киев, пр-т Леси Украинки, 26</a
-        >
-      </address>
-      <ul class="footer-contacts">
-        <li class="footer-contacts-mail">
-          <a class="footer-contacts-link" href="mailto:info@example.com"
-            >info@example.com</a
-          >
-        </li>
-        <li class="footer-contacts-mail">
-          <a class="footer-contacts-link" href="tel:+380991111111"
-            >+38 099 111 11 11</a
-          >
-        </li>
-      </ul>
+      <div class="container">
+        <a class="logo-link" href="#">
+          <span class="logo-item-blue">Web</span><span class="logo-item-studio">Studio</span></a>
+        <address class="address">
+          <ul class="footer-contacts">
+            <li class="footer-contacts-mail">
+              <a
+                class="footer-contacts-link asr"
+                href="https://goo.gl/maps/7WQNY8XXJnGFuJA47"
+                target="_blank"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="footer-contacts-mail contact">
+              <a class="footer-contacts-link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+
+            <li class="footer-contacts-mail">
+              <a class="footer-contacts-link contact" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

@@ -81,7 +81,7 @@ p {
   line-height: 1.2;
 }
 
-/*==================== Навігація==================== */
+/*==================== Навігація загальний==================== */
 
 .header {
   border-bottom: 1px solid #ececec;
@@ -113,6 +113,7 @@ ol {
 .navigation-link:focus {
   color: var(--accent-color);
 }
+
 .navigation-list-item:not(:last-child),
 .contacts-list-item:not(:last-child) {
   margin-right: 50px;
@@ -174,7 +175,26 @@ ol {
   letter-spacing: 0.02em;
 }
 
+/* section my work on portfolio */
+.my-work {
+  margin: 94px auto;
+}
+
 /* ============Портфоліо Секція button============ */
+.list-button list {
+display: flex;
+}
+
+.list-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button-item {
+  margin-right: 8px;
+}
+
 .button-title:hover,
 .button-title:focus {
   background-color: var(--accent-color);
@@ -183,28 +203,55 @@ ol {
 
 .button-title {
   background-color: var(--secondary-background-color);
-  border-radius: 4px;
-  font-size: 14px;
-  line-height: 1.62;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    min-width: 73px;
+    height: 38px;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
+    cursor: pointer;
 }
-/* ======Портфоліо закінчення секції button====== */
 
 /* < !-- Портфоліо Секція зі зразками роботи в картинках --> */
+
+.my-work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+
+.list {
+  list-style: none;
+}
+
 .my-work-title {
   color: var(--secondary-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-/* < !--  Студія Чим займаються та 3 картинки --> */
 
-/* <!-- Портфоліо Секція зі зразками роботи в картинках --> */
 .my-work-text {
   color: var(--primary-text-color);
   font-weight: var(--regular-font-weight);
   font-size: 16px;
   line-height: 1.87;
 }
+
+.my-work-list {
+  display: flex;
+}
+
+.my-work-item {
+  margin-right: 30px;
+}
+
+.description-my-work {
+  padding: 20px 24px;
+}
+
 
 /* ===============Герой=============== */
 
@@ -224,8 +271,8 @@ ol {
   padding-bottom: 200px;
   text-align: center;
   background: var(--primary-background-color);
-  
 }
+
 .hero-button:hover,
 .hero-button:focus {
   color: var(--accent-color);
@@ -246,9 +293,8 @@ ol {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-/* ========================section hero end */
 
-/*=========================Секція з текстом */
+/*=========================Секція з текстом========== */
 
 .features-list {
   display: flex;
@@ -284,6 +330,7 @@ ol {
   font-weight: var(--regular-font-weight);
   color: var(--primary-text-color);
 }
+
 /* =============Закінчення розстановки тексту--------- */
 
 /* < !-- Чим займаються та 3 картинки --> */
@@ -291,6 +338,7 @@ ol {
   display: flex;
   align-items: center;
 }
+
 .about {
   padding-bottom: 94px;
 }
@@ -298,6 +346,7 @@ ol {
 img {
   display: block;
 }
+
 .about-title {
   margin-bottom: 50px;
   color: var(--secondary-text-color);
@@ -308,45 +357,15 @@ img {
   text-align: center;
 }
 
-
-.about-list-image:not(:last-child){
+.about-list-image:not(:last-child) {
   margin-right: 30px;
 }
-/* Закінчення картинок зі зразками роботи */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================Наша команда */
+/* ==========================Наша команда========== */
 .team-four-person {
   background-color: var(--secondary-background-color);
 }
+
 .team-list {
   display: flex;
   align-items: center;
@@ -356,6 +375,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .team-title {
   margin-bottom: 50px;
   color: var(--secondary-text-color);
@@ -371,14 +391,13 @@ img {
 }
 
 .foto-staff {
-text-align: center;
-padding-top: 30px;
-padding-bottom: 30px;
-background-color: var(--primary-white-color);
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-0px 1px 1px rgba(0, 0, 0, 0.14),
-0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-profession {
@@ -408,18 +427,20 @@ border-radius: 0px 0px 4px 4px;
 
 .footer .logo-item-studio {
   color: var(--primary-white-color);
+  font-family: var(--text-logo);
 }
 
 .logo-link {
-      display: block;
-      margin-bottom: 20px;
-      color: var(--text-light-color);
-      font-family: var(--text-logo);
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 1.19;
-      letter-spacing: 0.03em;
-      }
+  display: block;
+  margin-bottom: 20px;
+  color: var(--text-light-color);
+  font-family: var(--text-logo);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
 /* ===============================кінець лого============== */
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
@@ -442,7 +463,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .asr {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contact {
