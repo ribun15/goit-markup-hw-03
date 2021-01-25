@@ -5,68 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebSudio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet" />
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- Навігація   -->
-  
     <header class="header">
-    <div class="container">
-      <nav class="navigation">
-        <a class="logo-link" href="#">
-          <span class="logo-item-blue">Web</span><span class="logo-item-studio">Studio</span>
-        </a>
-        <ul class="navigation-list">
-          <li class="navigation-list-item">
-            <a class="navigation-link-studio" href="./index.html">Студия</a>
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo-link" href="#">
+            <span class="logo-item-blue">Web</span
+            ><span class="logo-item-studio">Studio</span>
+          </a>
+          <ul class="navigation-list">
+            <li class="navigation-list-item">
+              <a class="navigation-link-studio" href="./index.html">Студия</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="navigation-list">
+              <a class="navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="navigation-contact">
+          <li class="contacts-list-item">
+            <a class="navigation-link-adress" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="navigation-list-item">
-            <a class="navigation-link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="navigation-list">
-            <a class="navigation-link" href="#">Контакты</a>
+          <li class="contacts-list-item">
+            <a class="navigation-link-adress" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="navigation-contact">
-        <li class="contacts-list-item">
-          <a class="navigation-link-adress" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="contacts-list-item">
-          <a class="navigation-link-adress" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
-    </div>
+      </div>
     </header>
-   
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Унікальний текст -->
     <main>
       <!-- Секція HERO головна інформацыя для привертання уваги -->
-      <section class="hero">
-        <div class="hero information">
-          <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
+     <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Эффективные решения<br/>для вашего бизнеса</h1>
           <button class="hero-button">Заказать услугу</button>
         </div>
       </section>
+      
       <!-- Опис про переваги із списку 4шт. -->
-      <section class="features">
+       <section class="features">
+        <div class="container">
         <ul class="features-list">
           <li class="features-item">
             <h3 class="features-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
@@ -97,9 +96,12 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
+        
       <!-- Чим займаються та 3 картинки -->
       <section class="about">
+        <div class="container">
         <h2 class="about-title">Чем мы занимаемся</h2>
         <ul class="about-list">
           <li class="about-list-image">
@@ -127,23 +129,25 @@
             />
           </li>
         </ul>
-      </section>
-      
+        </div>
+      </section>   
       <!-- Наша команда 4 співробітника -->
-      <section class="team-fore-person">
+      <section class="team-four-person">
+        <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list">
-            <li class="team-list-item">
+          <li class="team-list-item">
             <img
               src="./img/img-index.html/team/Игорь-Демьяненко.png"
               alt="Игорь Демьяненко"
               width="270"
               height="260"
             />
+            <div class="foto-staff">
             <h3 class="team-list-name">Игорь Демьяненко</h3>
             <p lang="en" class="team-list-profession">Product Designer</p>
-          </li>
-          <li >
+            </div> 
+        </li>
           <li class="team-list-item">
             <img
               src="./img/img-index.html/team/Ольга-Репина.jpg"
@@ -151,49 +155,60 @@
               width="270"
               height="260"
             />
+            <div class="foto-staff">
             <h3 class="team-list-name">Ольга Репина</h3>
             <p lang="en" class="team-list-profession">Frontend Developer</p>
-          </li>
-          <li>
+          </div></li>
+          <li class="team-list-item">
             <img
               src="./img/img-index.html/team/Николай-Тарасов.jpg"
               alt="Николай Тарасов"
               width="270"
               height="260"
             />
+            <div class="foto-staff">
             <h3 class="team-list-name">Николай Тарасов</h3>
             <p lang="en" class="team-list-profession">Marketing</p>
-          </li>
-          <li>
+            </div></li>
+          <li class="team-list-item">
             <img
               src="./img/img-index.html/team/Михаи-Ермаков.jpg"
               alt="Михаил Ермаков"
               width="270"
               height="260"
             />
+            <div class="foto-staff">
             <h3 class="team-list-name">Михаил Ермаков</h3>
             <p lang="en" class="team-list-profession">UI Designer</p>
-          </li>
+          </div></li>
         </ul>
       </section>
+      </div>
     </main>
-    
+
     <!-- Нижня частина сайту -->
-<footer class="footer">
-    <a class="logo-link" href="#">
-        <span class="logo-item-blue">Web</span><span class="logo-item-studio">Studio</span>
-    </a>
-    <address class="address">
-        <a class="map-link" href="https://goo.gl/maps/7WQNY8XXJnGFuJA47" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
-    </address>
-    <ul class="footer-contacts">
+    <footer class="footer">
+     
+      <div class="container">
+      <a class="logo-link" href="#">
+      <span class="logo-item-blue">Web</span><span class="logo-item-studio">Studio</span></a>
+         
+      <address class="address">
+       
+        <ul class="footer-contacts">
         <li class="footer-contacts-mail">
-            <a class="footer-contacts-link" href="mailto:info@example.com">info@example.com</a>
+        <a class="footer-contacts-link asr" href="https://goo.gl/maps/7WQNY8XXJnGFuJA47"
+        target="_blank">г. Киев, пр-т Леси Украинки, 26</a></li>
+         
+          <li class="footer-contacts-mail contact">
+          <a class="footer-contacts-link" href="mailto:info@example.com">info@example.com</a></li>
+        
+         <li class="footer-contacts-mail">
+          <a class="footer-contacts-link contact" href="tel:+380991111111">+38 099 111 11 11</a>
         </li>
-        <li class="footer-contacts-mail">
-            <a class="footer-contacts-link" href="tel:+380991111111">+38 099 111 11 11</a>
-        </li>
-    </ul>
-</footer>
+      </ul>
+      </address>
+      </div>
+    </footer>
   </body>
 </html>
