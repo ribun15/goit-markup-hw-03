@@ -99,9 +99,10 @@ ol {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+width: 1200px;
+margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
 }
 
 .navigation {
@@ -432,13 +433,15 @@ img {
 
 .logo-link {
   display: block;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   color: var(--text-light-color);
   font-family: var(--text-logo);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 /* ===============================кінець лого============== */
