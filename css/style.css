@@ -381,7 +381,6 @@ img {
 .team-list {
   display: flex;
   align-items: center;
-  width: 270px;
 }
 
 .team-four-person {
@@ -404,7 +403,7 @@ img {
 }
 
 .team-list-item {
-  width: 370px;
+  width: 270px;
 }
 
 .foto-staff {
