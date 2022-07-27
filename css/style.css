@@ -218,8 +218,7 @@ padding: 94px 0px;
 .my-work-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
-}
+  }
 
 .my-work-item {
   width: 370px;
